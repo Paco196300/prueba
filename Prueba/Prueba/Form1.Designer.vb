@@ -22,10 +22,41 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container()
+        Me.BttInicio = New System.Windows.Forms.Button()
+        Me.BttSalir = New System.Windows.Forms.Button()
+        Me.SuspendLayout()
+        '
+        'BttInicio
+        '
+        Me.BttInicio.Location = New System.Drawing.Point(12, 12)
+        Me.BttInicio.Name = "BttInicio"
+        Me.BttInicio.Size = New System.Drawing.Size(104, 48)
+        Me.BttInicio.TabIndex = 0
+        Me.BttInicio.Text = "Inicio"
+        Me.BttInicio.UseVisualStyleBackColor = True
+        '
+        'BttSalir
+        '
+        Me.BttSalir.Location = New System.Drawing.Point(684, 12)
+        Me.BttSalir.Name = "BttSalir"
+        Me.BttSalir.Size = New System.Drawing.Size(104, 48)
+        Me.BttSalir.TabIndex = 1
+        Me.BttSalir.Text = "Salir"
+        Me.BttSalir.UseVisualStyleBackColor = True
+        '
+        'Form1
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(800, 137)
+        Me.Controls.Add(Me.BttSalir)
+        Me.Controls.Add(Me.BttInicio)
+        Me.Name = "Form1"
         Me.Text = "Form1"
+        Me.ResumeLayout(False)
+
     End Sub
 
+    Friend WithEvents BttInicio As Button
+    Friend WithEvents BttSalir As Button
 End Class
