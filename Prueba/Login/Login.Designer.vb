@@ -26,7 +26,11 @@ Partial Class Login
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.RichTextBox2 = New System.Windows.Forms.RichTextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
+        Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
@@ -67,16 +71,44 @@ Partial Class Login
         Me.Panel1.Size = New System.Drawing.Size(320, 45)
         Me.Panel1.TabIndex = 3
         '
+        'Panel2
+        '
+        Me.Panel2.Controls.Add(Me.RichTextBox2)
+        Me.Panel2.Controls.Add(Me.Label2)
+        Me.Panel2.Location = New System.Drawing.Point(240, 140)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(320, 45)
+        Me.Panel2.TabIndex = 4
+        '
+        'RichTextBox2
+        '
+        Me.RichTextBox2.Location = New System.Drawing.Point(175, 10)
+        Me.RichTextBox2.Name = "RichTextBox2"
+        Me.RichTextBox2.Size = New System.Drawing.Size(125, 25)
+        Me.RichTextBox2.TabIndex = 1
+        Me.RichTextBox2.Text = ""
+        '
+        'Label2
+        '
+        Me.Label2.Location = New System.Drawing.Point(20, 10)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(100, 25)
+        Me.Label2.TabIndex = 0
+        Me.Label2.Text = "Password:"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Button1)
         Me.Name = "Login"
         Me.Text = "Form1"
         Me.Panel1.ResumeLayout(False)
+        Me.Panel2.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -85,4 +117,7 @@ Partial Class Login
     Friend WithEvents RichTextBox1 As RichTextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents Panel1 As Panel
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents RichTextBox2 As RichTextBox
+    Friend WithEvents Label2 As Label
 End Class
